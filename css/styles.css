@@ -485,7 +485,6 @@ tr td:nth-child(3) {
 
     .main.active .toggle {
         position: fixed;
-        right: 0;
         left: initial;
         color: var(--white-color);
     }
