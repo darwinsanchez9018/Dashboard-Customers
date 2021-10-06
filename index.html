@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/styles.css">
+
+    <title>Dashboard</title>
+</head>
+
+<body>
+    <div class="container">
+
+        <!-- NAVIGATION -->
+        <nav id="nav" class="nav">
+            <ul class="nav-list">
+                <li class="nav-item nav-item__1">
+                    <a class="nav-link" href="#">
+                        <span class="nav-link__icon"><ion-icon name="logo-electron"></ion-icon></span>
+                        <span class="nav-link__title">Electrón Tecnología</span>
+                    </a>
+                </li>
+
+                <li class="nav-item nav-item__2">
+                    <a class="nav-link" href="#">
+                        <span class="nav-link__icon"><ion-icon name="home-outline"></ion-icon></span>
+                        <span class="nav-link__title">Dashboard</span>
+                    </a>
+                </li>
+
+                <li class="nav-item nav-item__3">
+                    <a class="nav-link" href="#">
+                        <span class="nav-link__icon"><ion-icon name="people-outline"></ion-icon></span>
+                        <span class="nav-link__title">Clientes</span>
+                    </a>
+                </li>
+
+                <li class="nav-item nav-item__4">
+                    <a class="nav-link" href="#">
+                        <span class="nav-link__icon"><ion-icon name="chatbubbles-outline"></ion-icon></span>
+                        <span class="nav-link__title">Chat</span>
+                    </a>
+                </li>
+
+                <li class="nav-item nav-item__5">
+                    <a class="nav-link" href="#">
+                        <span class="nav-link__icon"><ion-icon name="help-circle-outline"></ion-icon></span>
+                        <span class="nav-link__title">Ayuda</span>
+                    </a>
+                </li>
+
+                <li class="nav-item nav-item__6">
+                    <a class="nav-link" href="#">
+                        <span class="nav-link__icon"><ion-icon name="settings-outline"></ion-icon></span>
+                        <span class="nav-link__title">Configuración</span>
+                    </a>
+                </li>
+
+                <li class="nav-item nav-item__7">
+                    <a class="nav-link" href="#">
+                        <span class="nav-link__icon"><ion-icon name="lock-closed-outline"></ion-icon></span>
+                        <span class="nav-link__title">Contraseña</span>
+                    </a>
+                </li>
+
+                <li class="nav-item nav-item__8">
+                    <a class="nav-link" href="#">
+                        <span class="nav-link__icon"><ion-icon name="log-out-outline"></ion-icon></span>
+                        <span class="nav-link__title">Salir</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+
+        <!-- MAIN -->
+        <main id="main" class="main">
+            <div class="topbar">
+                <div id="toggle" class="toggle">
+                    <ion-icon name="menu-outline"></ion-icon>
+                </div>
+
+                <!-- Search -->
+                <div class="search">
+                    <label class="search-label">
+                        <input class="search-input" type="text" placeholder="Buscar">
+                        <ion-icon name="search-outline"></ion-icon>
+                    </label>
+                </div>
+
+                <!-- User Image -->
+                <div class="user">
+                    <img class="user-img" src="assets/images/user.jpg" alt="usuario">
+                </div>
+            </div>
+
+
+            <!-- CARDS -->
+            <div class="cardBox">
+                <div class="card">
+                    <div>
+                        <div class="card-numbers">1,867</div>
+                        <div class="card-info">Vistas Diarias</div>
+                    </div>
+                    <div class="card-icon">
+                        <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div>
+                        <div class="card-numbers">70</div>
+                        <div class="card-info">Ventas</div>
+                    </div>
+                    <div class="card-icon">
+                        <ion-icon name="cart-outline"></ion-icon>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div>
+                        <div class="card-numbers">167</div>
+                        <div class="card-info">Comentarios</div>
+                    </div>
+                    <div class="card-icon">
+                        <ion-icon name="chatbox-ellipses-outline"></ion-icon>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div>
+                        <div class="card-numbers">$ 6,867</div>
+                        <div class="card-info">Ganancias</div>
+                    </div>
+                    <div class="card-icon">
+                        <ion-icon name="cash-outline"></ion-icon>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Order Details List -->
+            <div class="details">
+                <div class="recentOrders">
+                    <div class="cardHeader">
+                        <h2 class="cardHeader-title">Pedidos Recientes</h2>
+                        <a href="#" class="btn">Ver Todo</a>
+                    </div>
+                    <table class="details-table">
+                        <thead>
+                            <tr>
+                                <td>Nombre</td>
+                                <td>Precio</td>
+                                <td>Pago</td>
+                                <td>Estado</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Smart TV Samsung</td>
+                                <td>$1200</td>
+                                <td>Pagado</td>
+                                <td><span class="status delivered">Entregado</span></td>
+                            </tr>
+
+                            <tr>
+                                <td>Blue-Ray 4K</td>
+                                <td>$800</td>
+                                <td>Vencido</td>
+                                <td><span class="status inprogress">Progreso</span></td>
+                            </tr>
+
+                            <tr>
+                                <td>Xiaomi Redmi 10</td>
+                                <td>$600</td>
+                                <td>Pagado</td>
+                                <td><span class="status return">Regresado</span></td>
+                            </tr>
+
+                            <tr>
+                                <td>Laptop Asus</td>
+                                <td>$1600</td>
+                                <td>Pagado</td>
+                                <td><span class="status delivered">Entregado</span></td>
+                            </tr>
+
+                            <tr>
+                                <td>Televisor 50" LG</td>
+                                <td>$2000</td>
+                                <td>Vencido</td>
+                                <td><span class="status pending">Pendiente</span></td>
+                            </tr>
+
+                            <tr>
+                                <td>PC Gamer Hp</td>
+                                <td>$1000</td>
+                                <td>Pagado</td>
+                                <td><span class="status return">Regresado</span></td>
+                            </tr>
+
+                            <tr>
+                                <td>Smart Watch</td>
+                                <td>$200</td>
+                                <td>Vencido</td>
+                                <td><span class="status pending">Pendiente</span></td>
+                            </tr>
+
+                            <tr>
+                                <td>Cine en Casa</td>
+                                <td>$1700</td>
+                                <td>Pagado</td>
+                                <td><span class="status inprogress">Progreso</span></td>
+                            </tr>
+
+                            <tr>
+                                <td>Minicomponente Daewoo</td>
+                                <td>$700</td>
+                                <td>Vencido</td>
+                                <td><span class="status pending">Pendiente</span></td>
+                            </tr>
+
+                            <tr>
+                                <td>Iphone 13</td>
+                                <td>$1900</td>
+                                <td>Pagado</td>
+                                <td><span class="status delivered">Entregado</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+
+                <!-- New Customers -->
+
+                <div class="customers">
+                    <div class="cardHeader-title">
+                        <h2>Clientes Recientes</h2>
+                    </div>
+                    <div class="customers-list">
+
+                        <div class="customer">
+                            <div class="customer-box">
+                                <img src="assets/images/img2.jpg" alt="ima2" class="customer-box__image">
+                            </div>
+                            
+                            <h4 class="customer-name">Marco <br>
+                            <span class="customer-country">Ecuador</span></h4>
+                        </div>
+
+                        <div class="customer">
+                            <div class="customer-box">
+                                <img src="assets/images/img3.jpg" alt="ima3" class="customer-box__image">
+                            </div>
+                            
+                            <h4 class="customer-name">Lizeth <br>
+                            <span class="customer-country">Colombia</span></h4>
+                        </div>
+
+                        <div class="customer">
+                            <div class="customer-box">
+                                <img src="assets/images/img4.jpg" alt="ima4" class="customer-box__image">
+                            </div>
+                            
+                            <h4 class="customer-name">Mishell <br>
+                            <span class="customer-country">Ecuador</span></h4>
+                        </div>
+
+                        <div class="customer">
+                            <div class="customer-box">
+                                <img src="assets/images/img5.jpg" alt="ima5" class="customer-box__image">
+                            </div>
+                            
+                            <h4 class="customer-name">Federico <br>
+                            <span class="customer-country">Chile</span></h4>
+                        </div>
+
+                        <div class="customer">
+                            <div class="customer-box">
+                                <img src="assets/images/img6.jpg" alt="ima1" class="customer-box__image">
+                            </div>
+                            
+                            <h4 class="customer-name">Oscar <br>
+                            <span class="customer-country">Panamá</span></h4>
+                        </div>
+
+                        <div class="customer">
+                            <div class="customer-box">
+                                <img src="assets/images/img7.jpg" alt="ima7" class="customer-box__image">
+                            </div>
+                            
+                            <h4 class="customer-name">Paula <br>
+                            <span class="customer-country">Colombia</span></h4>
+                        </div>
+
+                        <div class="customer">
+                            <div class="customer-box">
+                                <img src="assets/images/img8.jpg" alt="ima8" class="customer-box__image">
+                            </div>
+                            
+                            <h4 class="customer-name">Jonás <br>
+                            <span class="customer-country">Argentina</span></h4>
+                        </div>
+
+                        <div class="customer">
+                            <div class="customer-box">
+                                <img src="assets/images/img9.jpg" alt="ima9" class="customer-box__image">
+                            </div>
+                            
+                            <h4 class="customer-name">Estefanía <br>
+                            <span class="customer-country">Perú</span></h4>
+                        </div>
+                        
+                    </div>
+
+                </div>
+            </div>
+
+        </main>
+    </div>
+
+
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    <script src="js/scripts.js"></script>
+
+    <!-- Derechos Reservados 2021 - Darwin Sánchez -->
+</body>
+
+</html>
